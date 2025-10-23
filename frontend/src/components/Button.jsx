@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Register from './Register'
 
 const Button = (props) => {
   return (
     <>
-    <a className={`btn ${props.class}`} href="">{props.text}</a>
+    <Link className={`btn ${props.class}`} to={props.to}>{props.text}</Link>
 
 
     </>
